@@ -1,0 +1,176 @@
+:root{
+    --clr-primary-300:rgba(27, 99, 102, 0.616);
+    --clr-primary-400:rgba(19, 66, 68, 0.616);
+    --clr-fonts:rgb(236, 247, 248);
+    --ff-primary: Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.image{
+    display: block;
+    width: min(100%,450px);
+    
+    max-width: 100%;
+}
+
+
+body{
+    font-family: var(--ff-primary);
+    color: var(--clr-fonts); 
+     
+}
+
+
+h1{
+  color: var(--clr-fonts);
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  line-height: 3rem;
+}
+
+a {
+    color: rgb(255, 255, 255);    
+}    
+
+h2,
+p{
+  margin-bottom: 0.5em;
+  text-align: justify;
+  
+}
+p{
+    padding-bottom: 1em;
+    
+}
+
+h3{
+    
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+header{
+    padding: 1em 0;
+}
+
+.container{
+    margin-inline:auto;
+    width: min(80%,70em);
+    text-align: center;
+    
+}
+
+
+.split {
+    display: flex;
+    flex-direction: column;
+  }
+.logoImg{
+    width: 150px;
+    padding: 0;
+    margin: 0%;
+}
+
+button{
+    width: 150px;
+    border: 1;
+    cursor: pointer;
+    color: var(--clr-fonts);
+    font-size: large;
+    font-weight: 600;
+    padding: 12px 10px;
+    outline: none;    
+    border-radius: 5px;
+    margin-top: 2em;
+    background-color: rgba(31, 93, 209, 0.582);
+    
+}
+
+.socialmedia img{
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+
+
+@media screen and (min-width: 350px) {
+    body {
+      
+      background-image: url(/img/smart-back2.jpg);      
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      object-fit: cover;
+      opacity: 1;
+    }   
+    /*This sets everything*/
+    .split>*{
+        flex-basis: 100%;
+    }
+    img.logoImg{
+        margin-bottom: 10%px;
+        max-height: 5em;
+        max-width: 5em;
+    }
+    #logoText,.text-center{
+        text-align: center;  
+    }
+   
+}
+
+@media screen and (min-width: 800px) {
+    body {
+      background-image: url(/img/top-bck.jpg);
+      background-repeat: no-repeat; 
+    }
+
+    .split{
+        flex-direction: row;
+    }
+
+    /*This sets everything like magic*/
+    .split>*{
+        flex-basis: 100%;        
+        padding: 10px;
+    }
+    
+    img.logoImg{
+        display: block;        
+        margin-left: 10%;
+        margin-bottom: 1%;
+    }
+    h2, #logoText{
+                
+        text-align: left;
+        margin-left: 10%;        
+        padding: 0;
+    }
+    h2{
+        padding: min(2%,10%);   
+    }
+    p{
+        font-size: 1.2em;
+        margin-left: 3%;
+    }
+    
+
+}
+
+/*@media (max-width:1920px){
+    .split{
+        flex-direction: column;
+    }
+    /*This sets everything like magic
+    .split>*{
+        flex-basis: 100%;
+    }
+}*/

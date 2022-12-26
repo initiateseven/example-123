@@ -1,0 +1,71 @@
+
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid white;
+    color: var(--clr-fonts);
+    font-size: 50px;
+    box-shadow: 0 0 0 1px;
+    line-height: 65px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    text-align: center;
+}
+
+.separate-h2{
+    text-align: center;
+    margin: 0;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 215px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#gameContainer{
+  margin: auto;  
+  padding: 1px;
+    
+}
+.split{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width:1920px){
+    .split{
+        flex-direction: column;
+    }
+    /*This sets everything like magic*/
+    .split>*{
+        flex-basis: 100%;
+    }
+} 
+
+#statusText{
+    text-align: center;
+    margin: 0;
+}
+#restartBtn{
+    text-align: center;
+            
+}
+.button{
+    text-align: center;
+}
+
+.socialmedia.img{
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 2em;
+    text-align: center;
+}
